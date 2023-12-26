@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+
+.form-1{
+    border: 2px solid red;
+    width: 55%;
+    position: relative;
+    top:36px
+    margin: auto;
+    
+
+}
+.mb-3{
+   
+    margin: auto;
+    padding: 0;
+    /*display: flex;*/
+}
+.form-1 input{
+    width: 75%;
+    height: 2em;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 5px 5px 15px 20px;
+    display: block;
+}
+.det-1{
+    border: 2px solid blue;
+    display: block;
+}
+
+
+.dte-4 input{
+    width:3%;
+    height: 1em;
+    padding: 13px;
+
+
+}
+.buto{
+    position: relative;
+    left: 45%;
+    height: 40px;
+    width: 80px;
+    margin: 5px 15px 5px 0px;
+}
+.mb-33{
+    padding: 13px;
+    margin: 15px;
+
+}
+Form{
+    border: 2px solid green;
+    justify-content: center;
+    padding: 10px 0px 20px 10px
+    
+}
+
+.dte-5{
+    height:8em;
+    background-color: #a0db57;
+
+}
+
+.dte-6{
+  position: absolute;
+    right: 5%;
+    top: 2%;
+}
+body{
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+
+}
+.name-1{
+    position: relative
+    top:30px;
+
+display: inline-block;
+}
+
+@media (max-width:770px) {
+    .dte-6{
+        display: none;
+    }
+    
+}
+
+
+   </style>
+
+</head>
+
+<body>
+    
+
+     <div class="form-1">
+     <div class='dte-5'>
+         <div class="name-1">
+             <h2>NAVOJYOTI SPORTS CLUB</h2>
+         </div>
+         <div class='dte-6'>LOGO</div>
+     </div>
+
+    <form method="post" action="/empregister">
+
+            <Form.Group class="mb-3" controlId="formBasicName">
+                <Form.Label>Performer name: </Form.Label><br />
+                <input type="name" placeholder="Enter name" name="name" />
+            </Form.Group>
+
+
+            <Form.Group class='mb-3'>
+                <Form.Label>Enter you Email id: </Form.Label><br />
+                <input type='text' name='email' id='email-id' placeholder="abc@gmail.com" />
+            </Form.Group>
+
+            <Form.Group class='mb-3'>
+                <Form.Label>Enter you mobile name: </Form.Label><br />
+                <input type='number' name='mb_number' id='mb_number' placeholder="10 digit mobile Number" />
+            </Form.Group>
+            
+                <Form.Label>Home Address: </Form.Label><br />
+                <input type='text' name='street_1' class='mb-33' placeholder="Street Address" /><br />
+                <input type='text' name='street_2' class='mb-33' placeholder="Street address line 2" /><br />
+                <input type='number' name='pin_code' class='mb-33' placeholder="Postal/Zip Code" /><br />
+                <input type='text' name='city' class='mb-33' placeholder="City" /><br />
+            </Form.Group>
+            <div class='dte-4'>
+                <Form.Group class="mb-3" controlId="formBasicCheckbox">
+                    <Form.Check type="checkbox" label="Check me out" />
+                </Form.Group>
+            </div>
+
+
+
+            <Button variant="primary" type="submit" class='buto'>
+                Submit
+            </Button>
+
+        </Form>
+
+
+
+    </form>
+
+</body>
+
+</html>
